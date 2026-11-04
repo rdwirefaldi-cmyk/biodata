@@ -1,1 +1,217 @@
-tess
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Pribadi - Alex Pratama</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+
+        /* Sidebar Kiri */
+        .sidebar {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .sidebar p.title {
+            color: #3498db;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #3498db;
+        }
+
+        /* Konten Kanan */
+        .content {
+            padding: 40px 30px;
+            flex: 1.5;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .bio-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .bio-list li {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .bio-list li .label {
+            font-weight: 600;
+            width: 130px;
+            color: #555;
+        }
+
+        .bio-list li .value {
+            color: #333;
+            flex: 1;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-badge {
+            background: #eef2f7;
+            color: #2c3e50;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bagian Kiri (Profil & Foto) -->
+        <div class="sidebar">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300&auto=format&fit=crop" alt="Foto Profil" class="profile-img">
+            <h1>Alex Pratama</h1>
+            <p class="title">Frontend Developer</p>
+            <p style="font-size: 13px; color: #cbd5e1; line-height: 1.5;">
+                Antusias dalam dunia teknologi, senang membangun antarmuka web yang interaktif dan ramah pengguna.
+            </p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Bagian Kanan (Detail Informasi / Biodata) -->
+        <div class="content">
+            <div class="section-title">Informasi Pribadi</div>
+            <ul class="bio-list">
+                <li>
+                    <span class="label">Nama Lengkap</span>
+                    <span class="value">: rafa.</span>
+                </li>
+                <li>
+                    <span class="label">Tempat, Tgl Lahir</span>
+                    <span class="value">: Jakarta, 15 Agustus 1998</span>
+                </li>
+                <li>
+                    <span class="label">Jenis Kelamin</span>
+                    <span class="value">: Laki-laki</span>
+                </li>
+                <li>
+                    <span class="label">Alamat</span>
+                    <span class="value">: Jl. Merdeka No. 45, Jakarta Selatan</span>
+                </li>
+                <li>
+                    <span class="label">Email</span>
+                    <span class="value">: alex.pratama@example.com</span>
+                </li>
+                <li>
+                    <span class="label">Telepon</span>
+                    <span class="value">: +62 812-3456-7890</span>
+                </li>
+            </ul>
+
+            <div class="section-title">Keahlian (Skills)</div>
+            <div class="skills-container">
+                <span class="skill-badge">HTML5 & CSS3</span>
+                <span class="skill-badge">JavaScript (ES6)</span>
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">UI/UX Design</span>
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Tailwind CSS</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
